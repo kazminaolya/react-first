@@ -30,13 +30,13 @@ module.exports = {
           sourceMap: !isProduction,
         },
       },
-      // {
-      //   loader: 'stylus-resources-loader',
-      //   options: {
-      //     // Provide path to the file with resources
-      //     resources: './src/assets/styles/_resources.styl',
-      //   },
-      // },
+        // {
+        //   loader: 'style-loader',
+        //   options: {
+        //     // Provide path to the file with resources
+        //     resources: './src/assets/styles/_resources.styl',
+        //   },
+        // },
       ],
     },
     {

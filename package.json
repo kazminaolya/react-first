@@ -7,7 +7,9 @@
     "build": "npx webpack",
     "lint:js": "npx eslint . --ext .js,.jsx --fix",
     "dev": "npx webpack-dev-server",
-    "error": "webpack --display-error-details"
+    "error": "webpack --display-error-details",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,8 @@
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^9.0.0",
     "babel-loader": "^8.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "css-loader": "^1.0.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -29,8 +33,10 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.2",
     "postcss-loader": "^3.0.0",
+    "react-styleguidist": "^7.3.8",
     "style-loader": "*",
     "style-resources-loader": "^1.2.1",
+    "stylint": "^1.5.9",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "stylus-resources-loader": "0.0.4",
@@ -40,11 +46,17 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "classnames": "^2.2.6",
     "crossenv": "0.0.2-security",
+    "i": "^0.3.6",
     "latest-version": "^4.0.0",
+    "npm": "^6.4.1",
     "prop-types": "^15.6.2",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-hot-loader": "^4.3.10"
   }
 }

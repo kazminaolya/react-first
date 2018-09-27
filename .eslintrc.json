@@ -1,8 +1,18 @@
 {
-  "extends": "airbnb",
+  "extends": [
+    "eslint:recommended",
+    "airbnb"
+  ],
   "parser": "babel-eslint",
   "env": {
     "browser": true,
     "node": true
-  }
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "react/jsx-max-props-per-line": [ 2, { "maximum": 3 }]
+  },
+  "plugins": [
+    "react"
+  ]
 }
